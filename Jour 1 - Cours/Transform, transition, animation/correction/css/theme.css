@@ -1,0 +1,65 @@
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+article + article {
+  margin-top: 2em;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.box {
+  width: 240px;
+  margin: 0 auto 2rem auto;
+  padding: 2em;
+  background-color: #fc3;
+}
+/* *****************************************************************
+TRANFORM
+***************************************************************** */
+
+.test-transform-translate {
+  transform: translateX(10rem);
+}
+.test-transform-scale {
+  transform: scale(0.5);
+}
+.test-transform-rotate {
+  transform: rotate(45deg);
+}
+.test-transform-skew {
+  transform: skewX(15deg);
+}
+.test-transform-multiple {
+  transform: translateX(10rem) scale(0.5) rotate(45deg) skewX(15deg);
+}
+/* *****************************************************************
+TRANSITION
+***************************************************************** */
+.test-transition {
+  transition: transform 10s, background-color 5s;
+}
+.test-transition:hover {
+  background-color: #3cf;
+  transform: scale(1.5);
+}
+
+/* *****************************************************************
+ANIMATION
+***************************************************************** */
+@keyframes newspaper {
+  from {
+    transform: scale(0) rotate(720deg);
+  }
+  to {
+    transform: scale(1) rotate(0deg);
+    background-color: #3cf;
+  }
+}
+
+.test-animation {
+  animation: newspaper 1s both;
+}
