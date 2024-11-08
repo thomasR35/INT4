@@ -44,38 +44,23 @@ article {
 DECORATION
 ***************************************************************** */
 h2,
-h3 {
+h3,
+h4 {
   font-family: Merienda;
+  padding: 1em;
 }
-h1:before {
-  content: "✭";
+h1::before,
+h1::after,
+h2::before,
+h2::after,
+h3::before,
+h3::after {
+  content: "\f005";
+  font-family: FontAwesome;
+  font-size: 0.8rem;
+  margin: 1em;
+  vertical-align: middle;
   color: #950000;
-  margin-right: 0.5em;
-}
-h2:before {
-  content: "✭";
-  color: #950000;
-  margin-right: 0.5em;
-}
-h3:before {
-  content: "✭";
-  color: #950000;
-  margin-right: 0.5em;
-}
-h1:after {
-  content: "✭";
-  color: #950000;
-  margin-left: 0.5em;
-}
-h2:after {
-  content: "✭";
-  color: #950000;
-  margin-left: 0.5em;
-}
-h3:after {
-  content: "✭";
-  color: #950000;
-  margin-left: 0.5em;
 }
 /* *****************************************************************
 HEADER
@@ -96,12 +81,92 @@ HEADER
   color: #000000;
   border-bottom: 1px solid #000000;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
+  padding: 0.5em;
 }
 .menuHeader li:hover {
   background-color: #4c4343;
   color: #ebe3db;
 }
 /* *****************************************************************
-ARTICLES
+ARTICLES/SECTIONS
 ***************************************************************** */
+article {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+section {
+  background-color: #ebe3db;
+  margin-top: 2em;
+}
+.menuAll img,
+.menuDesert img,
+.menuCocktails img {
+  width: 48%;
+}
+article section li {
+  list-style: none;
+  text-align: left;
+  border-bottom: dashed 2px #4c4343;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-left: 0;
+  font-weight: 600;
+}
+article section li:before {
+  content: "\f005";
+  font-family: FontAwesome;
+  font-size: 0.8rem;
+  margin: 1em;
+  vertical-align: middle;
+  color: #950000;
+}
+section div {
+  background-color: #4c4343;
+  text-decoration: none;
+  margin: auto;
+  padding: 0.5em;
+  width: 90%;
+}
+section div a {
+  text-decoration: none;
+  color: #ebe3db;
+}
+.fork-knife {
+  width: 5%;
+  height: 5%;
+  align-content: center;
+  transform: translate(-10px, 10px);
+}
+/* *****************************************************************
+FOOTER
+***************************************************************** */
+.pre-footer {
+  background-image: url(../images/footer-bg.jpg);
+  background-size: stretch;
+  background-position: center;
+  color: #ebe3db;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+h4 {
+  font-size: 1.8rem;
+  border-bottom: dashed 2px #ebe3db;
+}
+.socialNetworks i {
+  color: #ebe3db;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.footer {
+  padding: 2em;
+  text-align: center;
+  background-color: #444;
+  color: #fff;
+  margin: 0;
+  width: 100%;
+}
+.footer img {
+  width: 7em;
+  height: 9em;
+}
