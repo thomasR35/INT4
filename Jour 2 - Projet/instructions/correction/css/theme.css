@@ -1,0 +1,107 @@
+/* *****************************************************************
+SLIDER
+***************************************************************** */
+
+.bx-wrapper .bx-caption {
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.bx-wrapper .bx-caption span {
+  color: #950000;
+}
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: auto;
+  padding: 0;
+  font-family: Athiti;
+  width: 100%;
+}
+body img {
+  width: 100%;
+}
+article {
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 2em;
+}
+/* *****************************************************************
+DECORATION
+***************************************************************** */
+h2,
+h3 {
+  font-family: Merienda;
+}
+h1:before {
+  content: "✭";
+  color: #950000;
+  margin-right: 0.5em;
+}
+h2:before {
+  content: "✭";
+  color: #950000;
+  margin-right: 0.5em;
+}
+h3:before {
+  content: "✭";
+  color: #950000;
+  margin-right: 0.5em;
+}
+h1:after {
+  content: "✭";
+  color: #950000;
+  margin-left: 0.5em;
+}
+h2:after {
+  content: "✭";
+  color: #950000;
+  margin-left: 0.5em;
+}
+h3:after {
+  content: "✭";
+  color: #950000;
+  margin-left: 0.5em;
+}
+/* *****************************************************************
+HEADER
+***************************************************************** */
+.logoHeader {
+  width: 25%;
+  height: 25%;
+  padding-top: 2em;
+}
+.menuHeader {
+  list-style: none;
+  background-color: #ebe3db;
+  border-top: 1px solid #000000;
+  width: 100%;
+  padding-left: 0;
+}
+.menuHeader li {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.menuHeader li:hover {
+  background-color: #4c4343;
+  color: #ebe3db;
+}
+/* *****************************************************************
+ARTICLES
+***************************************************************** */
