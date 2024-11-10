@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Freshly Restaurant Menus" />
     <title>Fresly Restaurant</title>
-    <link rel="stylesheet" href="css/common-v3.css" type="text/css" />
     <link rel="stylesheet" href="css/theme.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +26,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <script src="js/fresly.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
@@ -38,21 +38,21 @@
       />
       <h1>FRESHLY RESTAURANT</h1>
       <menu class="menuHeader">
-        <li>Home</li>
-        <li>About</li>
-        <li>Menus</li>
-        <li>Contact</li>
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="about.html">About</a></li>
+        <li class="nav-link"><a href="menu.html">Menus</a></li>
+        <li class="nav-link"><a href="#ContactMenu">Contact</a></li>
       </menu>
     </header>
     <main class="container-menu">
-      <article class="Menus">
+      <article class="MenusMenus">
         <h2>Details of our menus</h2>
         <p>Choose your main course according to your menu !</p>
         <ul>
-          <li>ALL</li>
-          <li>MEAT</li>
-          <li>VEGAN</li>
-          <li>FISH</li>
+          <li><a href="#ALL">ALL</a></li>
+          <li><a href="#MEAT">MEAT</a></li>
+          <li><a href="#VEGAN">VEGAN</a></li>
+          <li><a href="#FISH">FISH</a></li>
         </ul>
         <section class="menuAll">
           <img
@@ -120,6 +120,28 @@
         </section>
       </article>
     </main>
+    <article class="pre-footer">
+      <article>
+        <h4>Opening hours</h4>
+        <p>Monday: Closed</p>
+        <p>Tue-Wed : 9am - 10pm</p>
+        <p>Thu-Fri : 9am - 10pm</p>
+        <p>Sat-Sun : 5pm - 10pm</p>
+      </article>
+      <article>
+        <h4 id="ContactMenu">Contact</h4>
+        <p>13 Christopher Street</p>
+        <p>New York,</p>
+        <p>NY 10014-3543</p>
+        <p>Phone: +01 2000 800 9999</p>
+      </article>
+      <article class="socialNetworks">
+        <h4>Social Networks</h4>
+        <i class="fab fa-facebook-f fa-2x"></i
+        ><i class="fab fa-instagram fa-2x"></i
+        ><i class="fab fa-pinterest fa-2x"></i>
+      </article>
+    </article>
     <footer class="footer">
       <p>
         <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"

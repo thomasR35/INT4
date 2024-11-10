@@ -33,7 +33,11 @@ body {
   width: 100%;
 }
 body img {
-  width: 100%;
+  max-width: 100%;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
 }
 article {
   padding-right: 1em;
@@ -88,6 +92,21 @@ HEADER
   background-color: #4c4343;
   color: #ebe3db;
 }
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-link {
+  background-color: #ebe3db;
+  color: #4c4343;
+}
+
+.nav-link:hover {
+  background-color: #4c4343;
+  color: #ebe3db;
+}
 /* *****************************************************************
 ARTICLES/SECTIONS
 ***************************************************************** */
@@ -110,8 +129,10 @@ article section li {
   border-bottom: dashed 2px #4c4343;
   width: 100%;
   padding-top: 0.5em;
-  padding-left: 0;
   font-weight: 600;
+}
+article section ul {
+  padding-left: 0;
 }
 article section li:before {
   content: "\f005";
@@ -133,10 +154,71 @@ section div a {
   color: #ebe3db;
 }
 .fork-knife {
-  width: 5%;
-  height: 5%;
   align-content: center;
   transform: translate(-10px, 10px);
+}
+.menu-image {
+  width: 52em;
+  height: 30em;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.5;
+
+    .price {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(76, 67, 67, 0.9);
+      color: #ffffff;
+      text-align: center;
+      font-size: 1.5rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+
+      .price-text {
+        border: 4px solid #fff;
+        padding: 10em 20em;
+        z-index: 1;
+      }
+    }
+  }
+
+  .price {
+    display: none;
+  }
+
+  .price50 {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  .priceIta {
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+.seeMore {
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.seeMore:hover {
+  background-color: #950000;
+  color: #ebe3db;
 }
 /* *****************************************************************
 FOOTER
@@ -156,7 +238,7 @@ h4 {
 .socialNetworks i {
   color: #ebe3db;
   font-size: 2rem;
-  padding: 2rem;
+  padding: 2em;
 }
 .footer {
   padding: 2em;
@@ -169,4 +251,57 @@ h4 {
 .footer img {
   width: 7em;
   height: 9em;
+}
+
+/* *****************************************************************
+MENUS
+***************************************************************** */
+.MenusMenus ul {
+  list-style: none;
+  padding: 0.5;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.MenusMenus li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 1em;
+  background-color: #ebe3db;
+  color: #4c4343;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.MenusMenus li:hover {
+  background-color: #950000;
+  color: #ebe3db;
+}
+.MenusMenus img {
+  box-shadow: 3px 3px 8px rgba(76, 67, 67, 0.5);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.menuAll img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuAll img:hover {
+  transform: scale(1.1);
+}
+.menuAll img,
+.menuDesert img,
+.menuCocktails img {
+  width: 48%;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.menuAll img:hover,
+.menuDesert img:hover,
+.menuCocktails img:hover {
+  opacity: 0.5;
+  background-color: rgba(76, 67, 67, 0.5);
 }

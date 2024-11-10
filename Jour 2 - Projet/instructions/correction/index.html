@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Freshly Restaurant" />
     <title>Fresly Restaurant</title>
-    <link rel="stylesheet" href="css/common-v3.css" type="text/css" />
     <link rel="stylesheet" href="css/theme.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Merienda:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Merienda:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css"
@@ -31,17 +36,17 @@
   </head>
   <body>
     <header class="header">
-    <img 
-      class="logoHeader"
-      src="images/logo.png"
-      alt="Logo Freshly Restaurant"
-    />  
+      <img
+        class="logoHeader"
+        src="images/logo.png"
+        alt="Logo Freshly Restaurant"
+      />
       <h1>FRESHLY RESTAURANT</h1>
       <menu class="menuHeader">
-        <li>Home</li>
-        <li>About</li>
-        <li>Menus</li>
-        <li>Contact</li>
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="about.html">About</a></li>
+        <li class="nav-link"><a href="menu.html">Menus</a></li>
+        <li class="nav-link"><a href="#ContactMenu">Contact</a></li>
       </menu>
     </header>
 
@@ -90,15 +95,24 @@
         </p>
       </article>
 
-      <article class="Menus">
+      <article class="MenusIndex">
         <h2>Special Menus</h2>
 
         <section>
           <h3>Meat menu</h3>
-          <img
-            src="images/meat-menu.jpg"
-            alt="Une assiette d'onglet et son beurre d'ail"
-          />
+          <div
+            class="menu-image"
+            style="background-image: url('images/meat-menu.jpg')"
+          >
+            <span class="price">
+              <span class="price-text">
+                <span class="price50">17 $</span><br />
+                <span class="priceIta"
+                  >soft drinks and desert included +<br />taxes</span
+                >
+              </span></span
+            >
+          </div>
           <ul>
             <li>Dolorem est fuga possimus.</li>
             <li>Iste aperiam facere reprerit.</li>
@@ -106,17 +120,28 @@
             <li>Ipsa autem accusam ducimus.</li>
             <li>Lorem ipsum dolor sit.</li>
           </ul>
-          <div>
-            <a href="#"><img  class="fork-knife"src="images/fork-knife.svg"/>See more</a>
+          <div class="seeMore">
+            <a href="menu.html"
+              ><img class="fork-knife" src="images/fork-knife.svg" />See more</a
+            >
           </div>
-        </br> 
+          <br />
         </section>
         <section>
           <h3>Fish menu</h3>
-          <img
-            src="images/fish-menu.jpg"
-            alt="Une assiette de riz sauté aux crevettes"
-          />
+          <div
+            class="menu-image"
+            style="background-image: url('images/fish-menu.jpg')"
+          >
+            <span class="price">
+              <span class="price-text">
+                <span class="price50">19 $</span><br />
+                <span class="priceIta"
+                  >soft drinks and desert included +<br />taxes</span
+                >
+              </span></span
+            >
+          </div>
           <ul>
             <li>Lorem ipsum dolor sit.</li>
             <li>Dolorem est fuga possimus.</li>
@@ -124,17 +149,28 @@
             <li>Amet consectur aperiam iusto.</li>
             <li>Ipsa autem accusam ducimus.</li>
           </ul>
-          <div>
-            <a href="#"><img  class="fork-knife"src="images/fork-knife.svg"/>See more</a>
+          <div class="seeMore">
+            <a href="menu.html"
+              ><img class="fork-knife" src="images/fork-knife.svg" />See more</a
+            >
           </div>
-        </br> 
+          <br />
         </section>
         <section>
           <h3>Vegetarian menu</h3>
-          <img
-            src="images/vegetarian-menu.jpg"
-            alt="Une entrée composee de Humous et de Guacamole décoré d'un lit de fleurs comestible"
-          />
+          <div
+            class="menu-image"
+            style="background-image: url('images/vegetarian-menu.jpg')"
+          >
+            <span class="price">
+              <span class="price-text">
+                <span class="price50">18 $</span><br />
+                <span class="priceIta"
+                  >soft drinks and desert included +<br />taxes</span
+                >
+              </span></span
+            >
+          </div>
           <ul>
             <li>Lorem ipsum dolor sit.</li>
             <li>Dolorem est fuga possimus.</li>
@@ -142,39 +178,44 @@
             <li>Amet consectur aperiam iusto.</li>
             <li>Ipsa autem accusam ducimus.</li>
           </ul>
-          <div>
-            <a href="#"><img  class="fork-knife"src="images/fork-knife.svg"/>See more</a>
+          <div class="seeMore">
+            <a href="menu.html"
+              ><img class="fork-knife" src="images/fork-knife.svg" />See more</a
+            >
           </div>
-        </br> 
+          <br />
         </section>
       </article>
     </main>
     <article class="pre-footer">
       <article>
-      <h4>Opening hours</h4>
-      <p>Monday: Closed</p>
-      <p>Tue-Wed : 9am - 10pm</p>
-      <p>Thu-Fri : 9am - 10pm</p>
-      <p>Sat-Sun : 5pm - 10pm</p>
+        <h4>Opening hours</h4>
+        <p>Monday: Closed</p>
+        <p>Tue-Wed : 9am - 10pm</p>
+        <p>Thu-Fri : 9am - 10pm</p>
+        <p>Sat-Sun : 5pm - 10pm</p>
       </article>
       <article>
-        <h4>Contact</h4>
+        <h4 id="Contact">Contact</h4>
         <p>13 Christopher Street</p>
         <p>New York,</p>
-        <p>NY 10014</p>
-        <p>Phone: (212) 555-1234</p>
-        <p>Fax: (212) 555-5678</p>
-        <p>Email: <a href="mailto:3Z8xM@example.com">3Z8xM@example.com</a></p>
+        <p>NY 10014-3543</p>
+        <p>+01 2000 800 9999</p>
       </article>
       <article class="socialNetworks">
         <h4>Social Networks</h4>
-        <i class="fab fa-facebook-f fa-2x"></i><i class="fab fa-instagram fa-2x"></i><i class="fab fa-pinterest fa-2x"></i>
-        </article>
+        <i class="fab fa-facebook-f fa-2x"></i
+        ><i class="fab fa-instagram fa-2x"></i
+        ><i class="fab fa-pinterest fa-2x"></i>
+      </article>
     </article>
     <footer class="footer">
       <p>
         <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"
-          ><img class="logo3wa" alt="Propriété de la 3W Academy" src="images/logo-3wa.png"
+          ><img
+            class="logo3wa"
+            alt="Propriété de la 3W Academy"
+            src="images/logo-3wa.png"
         /></a>
       </p>
       <p>
