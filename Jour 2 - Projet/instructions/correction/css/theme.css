@@ -30,10 +30,6 @@ body {
   margin: auto;
   padding: 0;
   font-family: Athiti;
-  width: 100%;
-}
-body img {
-  max-width: 100%;
 }
 body a {
   text-decoration: none;
@@ -75,8 +71,9 @@ HEADER
   padding-top: 2em;
 }
 .menuHeader {
+  display: flex;
+  flex-direction: column;
   list-style: none;
-  background-color: #ebe3db;
   border-top: 1px solid #000000;
   width: 100%;
   padding-left: 0;
@@ -84,6 +81,7 @@ HEADER
 .menuHeader li {
   color: #000000;
   border-bottom: 1px solid #000000;
+  background-color: #ebe3db;
   font-size: 1.5rem;
   font-weight: 600;
   padding: 0.5em;
@@ -142,6 +140,10 @@ article section li:before {
   vertical-align: middle;
   color: #950000;
 }
+.Welcome img {
+  width: 100%;
+  height: auto;
+}
 section div {
   background-color: #4c4343;
   text-decoration: none;
@@ -158,8 +160,8 @@ section div a {
   transform: translate(-10px, 10px);
 }
 .menu-image {
-  width: 52em;
-  height: 30em;
+  width: 100%;
+  height: 20em;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -230,6 +232,12 @@ FOOTER
   color: #ebe3db;
   padding-top: 2em;
   padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.pre-footer article {
+  max-width: none;
+  align-items: center;
 }
 h4 {
   font-size: 1.8rem;
@@ -238,7 +246,7 @@ h4 {
 .socialNetworks i {
   color: #ebe3db;
   font-size: 2rem;
-  padding: 2em;
+  padding: 1em;
 }
 .footer {
   padding: 2em;
@@ -304,4 +312,119 @@ MENUS
 .menuCocktails img:hover {
   opacity: 0.5;
   background-color: rgba(76, 67, 67, 0.5);
+}
+/* *****************************************************************
+TABLETTE
+***************************************************************** */
+@media screen and (min-width: 780px) {
+  .menuHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: none;
+    background-color: #ebe3db;
+  }
+  .menuHeader li {
+    margin: 0.5em;
+    border: none;
+  }
+  .pre-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 1em;
+    background-color: #444;
+    color: #ebe3db;
+  }
+  .pre-footer article {
+    flex: 1;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+}
+/* *****************************************************************
+DESKTOP
+***************************************************************** */
+@media screen and (min-width: 1100px) {
+  main {
+    max-width: 1400px;
+    margin: auto;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em 2em;
+  }
+  .header img {
+    width: 3em;
+    flex: 1;
+  }
+  .menuHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #fff;
+    border: none;
+    flex: 1;
+  }
+  .menuHeader li {
+    margin-right: 0;
+    margin: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border: none;
+  }
+  .menuHeader h1 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+  .Welcome {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+  }
+  .welcomeImg {
+    order: 2;
+    max-width: 600px;
+  }
+  .Welcome p {
+    margin: 0 0 1em 0;
+    text-align: left;
+  }
+  .Welcome div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .MenusIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em;
+  }
+  .MenusIndex section {
+    flex: 1;
+    max-width: 30%;
+    margin: 1em;
+    background-color: #ebe3db;
+    padding: 1em;
+  }
+
+  .menu-image {
+    width: 100%;
+    height: 25rem;
+    width: 30rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+  }
+
+  .seeMore {
+    text-align: center;
+    margin-top: 1em;
+  }
 }
